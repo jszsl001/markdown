@@ -1,237 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!-- TODO: Don't hard code the conclusion as page 8 -->
-    <title>
-      Markdown Tutorial
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- TODO: Don't hard code the conclusion as page 8 -->
+  <title>
+    Markdown Tutorial
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <link
-      href="/assets/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/css/font-awesome.css"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link
+          href="/assets/css/bootstrap.min.css"
+          rel="stylesheet"
+  />
+  <link
+          href="/assets/css/font-awesome.css"
+          rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" type="text/css"  crossorigin="anonymous" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css">
-  </head>
+  <link rel="stylesheet" type="text/css"  crossorigin="anonymous" href="/assets/main-c81f18e2d3a47db6722f2191e48cc8cc89874088aa4230e61e15bf085ba39a66.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <ul class="nav navbar-nav">
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <ul class="nav navbar-nav">
 
-          <li>
-            <a
-              class="nav-link"
-              href="/"
-              data-toggle="tooltip"
-              data-original-title="In English"
-              >🇺🇸</a
-            >
-          </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/"
+                data-toggle="tooltip"
+                data-original-title="In English"
+        >🇺🇸</a
+        >
+      </li>
 
-          <li>
-            <a
-              class="nav-link"
-              href="/es"
-              data-toggle="tooltip"
-              data-original-title="En español"
-              >🇪🇸</a
-            >
-          </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/es"
+                data-toggle="tooltip"
+                data-original-title="En español"
+        >🇪🇸</a
+        >
+      </li>
 
-          <li>
-            <a
-              class="nav-link"
-              href="/fr"
-              data-toggle="tooltip"
-              data-original-title="En français"
-              >🇫🇷</a
-            >
-          </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/fr"
+                data-toggle="tooltip"
+                data-original-title="En français"
+        >🇫🇷</a
+        >
+      </li>
 
-          <li>
-            <a
-              class="nav-link"
-              href="/kr"
-              data-toggle="tooltip"
-              data-original-title="In Korean"
-              >🇰🇷</a
-            >
-          </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/kr"
+                data-toggle="tooltip"
+                data-original-title="In Korean"
+        >🇰🇷</a
+        >
+      </li>
 
-          <li>
-            <a
-              class="nav-link"
-              href="/jp"
-              data-toggle="tooltip"
-              data-original-title="In Japanese"
-              >🇯🇵</a
-            >
-          </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/jp"
+                data-toggle="tooltip"
+                data-original-title="In Japanese"
+        >🇯🇵</a
+        >
+      </li>
 
-          <li>
-            <a
-              class="nav-link"
-              href="/nl"
-              data-toggle="tooltip"
-              data-original-title="In Dutch"
-              >🇳🇱</a
-            >
-          </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/nl"
+                data-toggle="tooltip"
+                data-original-title="In Dutch"
+        >🇳🇱</a
+        >
+      </li>
 
-          <li>
-            <a
-              class="nav-link"
-              href="/zh-cn"
-              data-toggle="tooltip"
-              data-original-title="In Simplified Chinese"
-              >🇨🇳</a
-            >
-          </li>
-          <li>
-            <a
-              class="nav-link"
-              href="/zh-tw"
-              data-toggle="tooltip"
-              data-original-title="In Traditional Chinese"
-              >🇹🇼</a
-            >
-          </li>
-        </ul>
-        <ul id="progress-bar" class="nav navbar-nav navbar-right">
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/1"
-              data-toggle="tooltip"
-              data-original-title="Italics and Bold"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/2"
-              data-toggle="tooltip"
-              data-original-title="Headers"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/3"
-              data-toggle="tooltip"
-              data-original-title="Links"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/4"
-              data-toggle="tooltip"
-              data-original-title="Images"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/5"
-              data-toggle="tooltip"
-              data-original-title="Blockquotes"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/6"
-              data-toggle="tooltip"
-              data-original-title="Lists"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/7"
-              data-toggle="tooltip"
-              data-original-title="Paragraphs"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/conclusion"
-              data-toggle="tooltip"
-              data-original-title="Conclusion"
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- /.navbar -->
-
-
-
-    <div class="container">
-      <div id="heroku-alert" class="alert alert-info" style="display: none">
-        Don't use this ugly Heroku app URL! Check out
-        <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
-        instead.
-      </div>
-      <div class="row">
-        <h1 class="title"></h1>
-      </div>
-
-      <p>Markdown is a way to write content for the web. It’s written in what
-people like to call “plaintext”, which is exactly the sort of text
-you’re used to writing and seeing. Plaintext is just the regular
-alphabet, with a few familiar symbols, like asterisks (
-<code>*</code> ) and backticks ( <code>`</code> ).</p>
-
-<p>Unlike cumbersome word processing applications, text written in
-Markdown can be easily shared between computers, mobile phones, and
-people. It’s quickly becoming the writing standard for
-<a href="http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295">academics</a>, <a href="http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/">scientists</a>, <a href="http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to+do-lists-and-notes">writers</a>,
-and many more.  Websites like <a href="https://www.github.com">GitHub</a> and
-<a href="http://www.reddit.com">reddit</a> use Markdown to style their comments.</p>
-
-<p>Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything
-fancy like change the font size, color, or type. All you have control over is
-the display of the text—stuff like making things bold, creating
-headers, and organizing lists.</p>
-
-<p>If you have ten minutes, you can learn Markdown!</p>
-
-<p>In each lesson, you’ll be given an introduction to a single Markdown
-concept. Then, you’ll be asked to complete several exercises with that
-new knowledge.</p>
-
-<p><a class="btn btn-lg btn-success" href="/lesson/1">Ready? Let’s get started!</a></p>
+      <li>
+        <a
+                class="nav-link"
+                href="/zh-cn"
+                data-toggle="tooltip"
+                data-original-title="In Simplified Chinese"
+        >🇨🇳</a
+        >
+      </li>
+      <li>
+        <a
+                class="nav-link"
+                href="/zh-tw"
+                data-toggle="tooltip"
+                data-original-title="In Traditional Chinese"
+        >🇹🇼</a
+        >
+      </li>
+    </ul>
+    <ul id="progress-bar" class="nav navbar-nav navbar-right">
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/1"
+                data-toggle="tooltip"
+                data-original-title="斜体和加粗"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/2"
+                data-toggle="tooltip"
+                data-original-title="标题"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/3"
+                data-toggle="tooltip"
+                data-original-title="超链接"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/4"
+                data-toggle="tooltip"
+                data-original-title="图片"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/5"
+                data-toggle="tooltip"
+                data-original-title="引用块"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/6"
+                data-toggle="tooltip"
+                data-original-title="列表"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/lesson/7"
+                data-toggle="tooltip"
+                data-original-title="段落"
+        ></a>
+      </li>
+      <li>
+        <a
+                class="lesson icon-circle-blank"
+                href="/zh-cn/conclusion"
+                data-toggle="tooltip"
+                data-original-title="总结"
+        ></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- /.navbar -->
 
 
 
-      <hr />
+<div class="container">
+  <div id="heroku-alert" class="alert alert-info" style="display: none">
+    Don't use this ugly Heroku app URL! Check out
+    <a href="http://www.markdowntutorial.com">www.markdowntutorial.com</a>
+    instead.
+  </div>
+  <div class="row">
+    <h1 class="title"></h1>
+  </div>
 
-      <div class="footer"></div>
-    </div>
-    <!-- /container -->
+  <p>Markdown 是一种用来书写网页内容的方法。它实际上在使用我们在日常生活中用来书写和发送信息的纯文本格式来书写。纯文本仅由常见的字母、文字和一些特殊符号来构成，例如星号（<code>\*</code>）和反引号（<code>`</code>）。</p>
 
-    <script src="/assets/js/ace.js"></script>
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script>
-      // TODO: If possible, we should make this change to "development" where
-      // appropriate.
-      var environment = "production";
-    </script>
+  <p>与一些繁琐的文字处理软件不同，使用 Markdown 书写的内容非常易于在不同的电脑，手机，和人之间分享。这很快成为了许多 <a href="http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295">教育者</a>，<a href="http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/">科学家</a>，<a href="http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to+do-lists-and-notes">作家</a>等的书写规范。例如 <a href="https://www.github.com">GitHub</a> 和 <a href="http://www.reddit.com">reddit</a> 的网站也使用 Markdown 作为它们的评论系统。</p>
 
-    <script  crossorigin="anonymous" type="text/javascript" src="/assets/main-27a2c02175dd9e3cc55614769dbb45616e2e6f623b55e3e1195b7d2dbc99ec61.js"></script>
-  </body>
+  <p>Markdown 中的语法十分简单，很容易学习。它并没有改变字体大小、颜色或类型。你需要控制的仅仅只是文字的显示类型，例如加粗文本，创建标题，和组织列表。</p>
+
+  <p>你只需要十分钟就可以学会 Markdown！</p>
+
+  <p>在每一个课程中，你会了解单个的 Markdown 语法概念，然后，系统会要求你完成一些关于新知识的练习。</p>
+
+  <p><a class="btn btn-lg btn-success" href="/zh-cn/lesson/1">准备好了吗？让我们开始吧！</a></p>
+
+
+
+  <hr />
+
+  <div class="footer"></div>
+</div>
+<!-- /container -->
+
+<script src="/assets/js/ace.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script>
+  // TODO: If possible, we should make this change to "development" where
+  // appropriate.
+  var environment = "production";
+</script>
+
+<script  crossorigin="anonymous" type="text/javascript" src="/assets/main-27a2c02175dd9e3cc55614769dbb45616e2e6f623b55e3e1195b7d2dbc99ec61.js"></script>
+<script src="/zh-cn/lesson_plans.js"></script>
+
+</body>
 </html>
